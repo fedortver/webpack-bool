@@ -1,5 +1,5 @@
-# webpack-bool
-Установка:
-git clone https://github.com/fedortver/webpack-bool.git 
-npm install
-npm run start
+# webpack-bool <br>
+Установка:<br>
+git clone https://github.com/fedortver/webpack-bool.git <br>
+npm install<br><br>
+npm run start<br>
