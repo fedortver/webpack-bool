@@ -10,6 +10,7 @@ module.exports = {
         host: process.env.HOST,
         port: process.env.PORT
     },
+
     plugins: [
         new webpack.WatchIgnorePlugin([
             path.join(__dirname, 'node_modules'),
@@ -21,6 +22,6 @@ module.exports = {
         }),
     ],
     module: {
-        rules: utils.styleLoaders({ sourceMap: false })
+        rules: utils.styleLoaders({ sourceMap: true })
     }
 }
