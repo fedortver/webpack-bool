@@ -91,11 +91,11 @@ document.body.appendChild(Object(__WEBPACK_IMPORTED_MODULE_0__component__["a" /*
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assets_index_css__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__assets_index_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__assets_index_css__);
 
-/* harmony default export */ __webpack_exports__["a"] = (function() {
-    const element = document.createElement('div')
-    element.innerHTML = 'Hello word!!!'
-    element.className = __WEBPACK_IMPORTED_MODULE_0__assets_index_css___default.a.greenClass
-    return element
+/* harmony default export */ __webpack_exports__["a"] = (function () {
+    const element = document.createElement('div');
+    element.innerHTML = 'Hello word!!!';
+    element.className = __WEBPACK_IMPORTED_MODULE_0__assets_index_css___default.a.greenClass;
+    return element;
 });
 
 /***/ })
