@@ -10,23 +10,23 @@ module.exports = {
         path: path.join(__dirname, '..', 'dist'),
         filename: '[name].js'
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            title: "Webpack demo"
-        }),
-    ],
+
     module: {
         rules: [{
                 test: /\.js$/,
-                loader: 'babel-loader',
-                include: [path.join(__dirname, '..', 'src')]
+                exclude: [/node_modules/],
+                include: [path.join(__dirname, '..', 'src')],
+                use: [{
+                    loader: 'babel-loader',
+                    options: { presets: ['es2015'] }
+                }]
             },
             {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
                 loader: 'url-loader',
                 options: {
                     limit: 10000,
-                    name: path.join('static', 'img/[name].[hash:7].[ext]')
+                    name: 'img/[name].[hash:7].[ext]'
                 }
             },
             {
@@ -34,7 +34,7 @@ module.exports = {
                 loader: 'url-loader',
                 options: {
                     limit: 10000,
-                    name: path.join('static', 'media/[name].[hash:7].[ext]')
+                    name: 'media/[name].[hash:7].[ext]'
                 }
             },
             {
@@ -42,7 +42,7 @@ module.exports = {
                 loader: 'url-loader',
                 options: {
                     limit: 10000,
-                    name: path.join('static', 'fonts/[name].[hash:7].[ext]')
+                    name: 'fonts/[name].[hash:7].[ext]'
                 }
             }
         ]

@@ -13,7 +13,12 @@ module.exports = {
     plugins: [
         new webpack.WatchIgnorePlugin([
             path.join(__dirname, 'node_modules'),
-        ])
+        ]),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: 'index.html',
+            inject: true
+        }),
     ],
     module: {
         rules: utils.styleLoaders({ sourceMap: false })

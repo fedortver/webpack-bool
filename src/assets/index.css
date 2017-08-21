@@ -1,3 +1,7 @@
 .greenClass {
     background: url('./milan.png')
 }
+
+body {
+    background: #e1e1e1;
+}
