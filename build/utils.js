@@ -9,7 +9,9 @@ function cssLoaders(options) {
         options: {
             minimize: options.extract,
             sourceMap: options.sourceMap,
-            modules: true
+            modules: true,
+            //not change class name
+            localIdentName: '[local]'
         }
     }
 
